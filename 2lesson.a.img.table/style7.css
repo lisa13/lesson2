@@ -1,0 +1,41 @@
+body{
+    padding-top: 200px;
+    padding-left: 100px; 
+}
+
+body #container{
+    background-color: lightgray;
+    width: 1000px;
+    padding: 0 50px 0 50px;  
+   
+}
+
+body #container .layer{
+    background-color: darkgray;
+    padding: 5px 5px; 
+    
+}
+
+body #container .layer .boxRed{
+    border: 2px solid red; 
+    padding: 0 0; 
+}
+
+body #container .layer .boxRed div.green{
+    border: 2px solid green; 
+}
+    
+table{margin: 0 auto;
+                  margin-top: 20px;
+                  width: 70%;
+            }
+
+table, th, td {
+                border: 1px solid black;
+
+            }
+           
+
+.black{
+                border-collapse: collapse;
+            }

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tables</title>
+    <style>
+        td,
+        th {
+            border: 2px solid #999;
+            padding: 0.5em 1em;
+        }
+
+        .small-image{
+                width:30px;height:20px;
+            }
+
+
+    </style>
+</head>
+
+<body style="text-align: center">
+    <a href="index.html"> Back to page 1</a>
+    <h1>HTML tables are still best known for being used and abused to lay out pages.
+        <br>The correct use for tables is to do exactly what you would expect a table to do — to structure tabular data.</h2>
+        <p><a href="http://www.htmldog.com/examples/"><img src="http://www.htmldog.com/badge1.gif" alt="HTML Dog"></a></p>
+
+        <img src="img/5.png">
+        <img src="img/2.png">
+
+        <hr>
+
+        <h2>Simple table</h2>
+        <table>
+            <tr>
+                <td>Row 1, cell 1</td>
+                <td>Row 1, cell 2</td>
+                <td>Row 1, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, cell 1</td>
+                <td>Row 2, cell 2</td>
+                <td>Row 2, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, cell 1</td>
+                <td>Row 3, cell 2</td>
+                <td>Row 3, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 4, cell 1</td>
+                <td>Row 4, cell 2</td>
+                <td>Row 4, cell 3</td>
+            </tr>
+        </table>
+
+        <hr>
+        <h2>Table with rowspan</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Carnivores</th>
+                <td>Tiger</td>
+                <td>Cheetah</td>
+                <td>Caracal</td>
+                <td>Wildcat</td>
+            </tr>
+            <tr>
+                <td>Grey Wolf</td>
+                <td>Cape hunting dog</td>
+                <td>Red fox</td>
+                <td>Fennec</td>
+            </tr>
+            <tr>
+                <th>Primates</th>
+                <td>Indri</td>
+                <td>Sifaka</td>
+                <td>Brown lemur</td>
+                <td>Dwarf lemur</td>
+            </tr>
+        </table>
+
+        <hr>
+        <h2>Table with colspan</h2>
+        <table>
+            <tr>
+                <th colspan="2">Carnivores</th>
+                <th>Primates</th>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Grey Wolf</td>
+                <td>Indri</td>
+            </tr>
+            <tr>
+                <td>Cheetah</td>
+                <td>Cape hunting dog</td>
+                <td>Sifaka</td>
+            </tr>
+            <tr>
+                <td>Caracal</td>
+                <td>Red fox</td>
+                <td>Brown lemur</td>
+            </tr>
+            <tr>
+                <td>Wildcat</td>
+                <td>Fennec</td>
+                <td>Dwarf lemur</td>
+            </tr>
+        </table>
+
+<!--                   Danger zone ahead           -->
+
+ <h1>Let's build these ourselves</h1>
+<hr>
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+    <th>Savings for holiday!</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+    <td rowspan="2">$50</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+<hr>
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+  <tr>
+    <td colspan="2">Sum: $180</td>
+  </tr>
+</table>
+
+
+<!--                    II Danger zone ahead           -->
+
+ <table class="black">
+                    <tbody>
+                        <tr> 
+                            <th>Image</th>
+                            <th>First name</th>
+                            <th>Last name</th>
+                        </tr>
+                        <tr>
+                            <td><img class="small-image" src="img/syria.jpg"></td>
+                            <td> Arman </td>
+                            <td> Karapetian</td>
+                        </tr>
+                        <tr>
+                            <td><img class="small-image" src="img/arm.png"></td>
+                            <td colspan="2">Vardan</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="small-image" src="img/kor.png"></td>
+                            <td>Liu</td>
+                            <td>Kim</td>
+                        </tr>
+                    </tbody>
+
+                     <div id="container">
+            <div class="layer">
+                <div class="boxRed"> 
+                    <div class="green">
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1
+                    </div> 
+                    
+                    <div class="green">
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 
+                    </div>
+                                    
+                    <div class="green">
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1
+                        Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 Text1 
+                    </div> 
+                </div>
+                    
+
+            </div>
+            
+
+        </div>
+
+
+                </table>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+Convert these images into html code. Each image should be on a separate html file.
+By the end of your task you should have 8 html/css files.
+
+Enjoy ;) 
